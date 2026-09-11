@@ -1,0 +1,17 @@
+{
+  "best_trial": 13,
+  "best_val_pr_auc_MEASURED": 0.8660814314502577,
+  "best_params": {
+    "max_depth": 6,
+    "learning_rate": 0.03487340699598392,
+    "n_estimators": 360,
+    "min_child_weight": 2,
+    "subsample": 0.7039491746834565,
+    "colsample_bytree": 0.7728578838972379,
+    "reg_alpha": 0.0030323559003166425,
+    "reg_lambda": 2.229166817588258,
+    "gamma": 0.07748225982113094,
+    "scale_pos_weight": 535.1359723079406
+  },
+  "n_trials_run": 25
+}

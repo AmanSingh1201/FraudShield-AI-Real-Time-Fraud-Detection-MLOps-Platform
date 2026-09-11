@@ -1,0 +1,16 @@
+service:
+  host: 0.0.0.0
+  port: 8000
+  workers: 2
+
+model_artifact_dir: data/features/models
+model_config_file: data/features/models/model_config.json
+feature_pipeline_file: data/features/feature_pipeline.joblib
+
+api:
+  max_request_body_bytes: 1048576
+  rate_limit_per_minute: 300   # enforced at nginx/gateway layer in deployment/nginx.conf
+
+logging:
+  level: INFO
+  redact_fields: [Amount]   # example: raw Amount not written to structured logs by default

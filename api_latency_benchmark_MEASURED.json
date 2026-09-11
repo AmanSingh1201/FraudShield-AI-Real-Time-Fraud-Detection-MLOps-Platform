@@ -1,0 +1,10 @@
+{
+  "environment": "Local loopback HTTP benchmark inside the build container (single uvicorn worker, no GPU, shared vCPU sandbox)",
+  "n_requests": 300,
+  "endpoint": "/predict",
+  "latency_ms_mean_MEASURED": 5.63,
+  "latency_ms_p50_MEASURED": 5.46,
+  "latency_ms_p95_MEASURED": 6.43,
+  "latency_ms_p99_MEASURED": 9.15,
+  "note": "This is full HTTP round-trip latency (serialization + FastAPI routing + feature transform + XGBoost inference + SHAP-free predict path), not raw model.predict_proba latency. Raw model inference latency alone was measured separately at ~0.18ms p50 (see docs/baseline_comparison_MEASURED.csv, xgboost row) -- the gap is HTTP/ASGI overhead, expected for a single-worker dev server on shared hardware, not representative of a tuned production deployment (multiple workers, connection pooling, gRPC, etc.)."
+}

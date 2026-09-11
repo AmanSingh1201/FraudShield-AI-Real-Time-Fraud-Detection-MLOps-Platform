@@ -1,0 +1,34 @@
+{
+  "top_factors": [
+    {
+      "feature": "V14",
+      "shap_value": 3.10906,
+      "feature_value": -4.79974,
+      "direction": "increases_fraud_risk"
+    },
+    {
+      "feature": "V10",
+      "shap_value": 1.25291,
+      "feature_value": -3.73966,
+      "direction": "increases_fraud_risk"
+    },
+    {
+      "feature": "V4",
+      "shap_value": 1.03842,
+      "feature_value": 3.67056,
+      "direction": "increases_fraud_risk"
+    },
+    {
+      "feature": "V12",
+      "shap_value": 0.70537,
+      "feature_value": -2.84445,
+      "direction": "increases_fraud_risk"
+    },
+    {
+      "feature": "V16",
+      "shap_value": 0.6255,
+      "feature_value": -2.69317,
+      "direction": "increases_fraud_risk"
+    }
+  ]
+}

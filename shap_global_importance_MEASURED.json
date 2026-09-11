@@ -1,0 +1,128 @@
+{
+  "global_feature_importance_MEASURED": [
+    {
+      "feature": "V4",
+      "mean_abs_shap": 1.966944
+    },
+    {
+      "feature": "V14",
+      "mean_abs_shap": 1.437274
+    },
+    {
+      "feature": "V12",
+      "mean_abs_shap": 1.138405
+    },
+    {
+      "feature": "V10",
+      "mean_abs_shap": 0.827478
+    },
+    {
+      "feature": "V11",
+      "mean_abs_shap": 0.722887
+    },
+    {
+      "feature": "V1",
+      "mean_abs_shap": 0.644265
+    },
+    {
+      "feature": "V8",
+      "mean_abs_shap": 0.549001
+    },
+    {
+      "feature": "V17",
+      "mean_abs_shap": 0.448785
+    },
+    {
+      "feature": "V3",
+      "mean_abs_shap": 0.404132
+    },
+    {
+      "feature": "V18",
+      "mean_abs_shap": 0.391974
+    },
+    {
+      "feature": "V24",
+      "mean_abs_shap": 0.303006
+    },
+    {
+      "feature": "V25",
+      "mean_abs_shap": 0.298338
+    },
+    {
+      "feature": "V16",
+      "mean_abs_shap": 0.289762
+    },
+    {
+      "feature": "amount_log1p",
+      "mean_abs_shap": 0.274286
+    },
+    {
+      "feature": "V7",
+      "mean_abs_shap": 0.267779
+    },
+    {
+      "feature": "V5",
+      "mean_abs_shap": 0.256438
+    },
+    {
+      "feature": "V23",
+      "mean_abs_shap": 0.249512
+    },
+    {
+      "feature": "V22",
+      "mean_abs_shap": 0.248966
+    },
+    {
+      "feature": "V28",
+      "mean_abs_shap": 0.248484
+    },
+    {
+      "feature": "V2",
+      "mean_abs_shap": 0.235032
+    },
+    {
+      "feature": "V27",
+      "mean_abs_shap": 0.227854
+    },
+    {
+      "feature": "V21",
+      "mean_abs_shap": 0.223813
+    },
+    {
+      "feature": "V26",
+      "mean_abs_shap": 0.218377
+    },
+    {
+      "feature": "V19",
+      "mean_abs_shap": 0.213658
+    },
+    {
+      "feature": "V6",
+      "mean_abs_shap": 0.206154
+    },
+    {
+      "feature": "V20",
+      "mean_abs_shap": 0.18768
+    },
+    {
+      "feature": "V9",
+      "mean_abs_shap": 0.181707
+    },
+    {
+      "feature": "V13",
+      "mean_abs_shap": 0.143912
+    },
+    {
+      "feature": "V15",
+      "mean_abs_shap": 0.136585
+    },
+    {
+      "feature": "hour_of_day",
+      "mean_abs_shap": 0.114736
+    },
+    {
+      "feature": "amount_zscore",
+      "mean_abs_shap": 0.058958
+    }
+  ]
+}

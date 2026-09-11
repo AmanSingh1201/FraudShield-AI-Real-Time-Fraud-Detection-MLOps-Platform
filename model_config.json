@@ -1,0 +1,7 @@
+{
+  "model_file": "xgboost_optuna_best.joblib",
+  "feature_pipeline_file": "feature_pipeline.joblib",
+  "decision_threshold": 0.0423111692070961,
+  "review_threshold": 0.01692446768283844,
+  "model_version": "xgb-optuna-v1"
+}

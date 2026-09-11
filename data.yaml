@@ -1,0 +1,15 @@
+dataset:
+  name: ulb_creditcard_fraud
+  raw_path: data/raw/creditcard.csv
+  source_url: https://raw.githubusercontent.com/nsethi31/Kaggle-Data-Credit-Card-Fraud-Detection/master/creditcard.csv
+  target_col: Class
+  time_col: Time
+
+split:
+  strategy: temporal          # temporal | stratified_random | group
+  train_frac: 0.70
+  val_frac: 0.15
+  test_frac: 0.15
+  drop_duplicates_in_train_only: true
+
+random_seed: 42

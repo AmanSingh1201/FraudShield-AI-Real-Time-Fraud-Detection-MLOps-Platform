@@ -1,0 +1,17 @@
+data/raw/
+data/processed/*.csv
+!data/processed/split_meta.json
+!data/processed/validation_report.json
+*.joblib
+mlruns/
+mlflow.db
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.env
+*.log
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store

@@ -1,0 +1,29 @@
+model:
+  algorithm: xgboost
+  optuna_n_trials: 25
+  optuna_objective_metric: pr_auc
+  random_seed: 42
+
+class_imbalance:
+  strategy: scale_pos_weight   # investigated: class_weight (LR/RF), scale_pos_weight (XGB)
+  smote_used: false
+  smote_reason_not_used: >
+    SMOTE interpolates synthetic points in the ALREADY-PCA-transformed V1..V28 space,
+    which risks generating points that don't correspond to any physically plausible
+    original transaction (interpolating between whitened principal components is not
+    the same as interpolating between raw features). scale_pos_weight / class_weight
+    reweight the existing, real examples instead of synthesizing new ones, avoiding
+    that risk, and XGBoost's scale_pos_weight is tunable directly inside the same
+    Optuna search used for every other hyperparameter (single consistent search
+    space, not two disjoint techniques).
+
+threshold_optimization:
+  objective: "maximize recall subject to precision >= 0.30"
+  selected_on_split: validation
+  precision_floor: 0.30
+
+mlflow:
+  tracking_uri: sqlite:///mlflow.db
+  experiments:
+    - fraudshield/baseline
+    - fraudshield/optuna

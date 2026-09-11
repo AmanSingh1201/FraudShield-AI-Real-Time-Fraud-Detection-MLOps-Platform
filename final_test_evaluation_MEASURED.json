@@ -1,0 +1,32 @@
+{
+  "split": "test (untouched, first evaluation)",
+  "n_rows": 42722,
+  "n_fraud": 52,
+  "threshold_used": 0.0423111692070961,
+  "pr_auc_MEASURED": 0.7591247395236274,
+  "roc_auc_MEASURED": 0.9783720322330588,
+  "precision_MEASURED": 0.27972027972027974,
+  "recall_MEASURED": 0.7692307692307693,
+  "f1_MEASURED": 0.41025641025641024,
+  "f2_MEASURED": 0.5698005698005698,
+  "confusion_matrix_MEASURED": {
+    "true_negative": 42567,
+    "false_positive": 103,
+    "false_negative": 12,
+    "true_positive": 40
+  },
+  "fraud_capture_rate_MEASURED": 0.7692307692307693,
+  "false_positive_rate_MEASURED": 0.0024138739161003045,
+  "precision_at_k_MEASURED": {
+    "10": 1.0,
+    "25": 1.0,
+    "50": 0.78,
+    "100": 0.39
+  },
+  "recall_at_k_MEASURED": {
+    "10": 0.19230769230769232,
+    "25": 0.4807692307692308,
+    "50": 0.75,
+    "100": 0.75
+  }
+}

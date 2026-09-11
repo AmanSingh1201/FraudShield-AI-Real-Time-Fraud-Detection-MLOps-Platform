@@ -1,0 +1,44 @@
+services:
+  fraudshield_api:
+    build:
+      context: .
+      dockerfile: deployment/Dockerfile
+    container_name: fraudshield_api
+    expose:
+      - "8000"
+    environment:
+      - LOG_LEVEL=INFO
+    healthcheck:
+      test: ["CMD", "./deployment/healthcheck.sh"]
+      interval: 15s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
+
+  mlflow:
+    image: python:3.12-slim
+    container_name: fraudshield_mlflow
+    working_dir: /mlflow
+    volumes:
+      - ./mlflow.db:/mlflow/mlflow.db
+      - ./mlruns:/mlflow/mlruns
+    command: >
+      bash -c "pip install --no-cache-dir mlflow==3.16.0 &&
+               mlflow server --host 0.0.0.0 --port 5000
+               --backend-store-uri sqlite:///mlflow.db
+               --default-artifact-root /mlflow/mlruns"
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: fraudshield_nginx
+    depends_on:
+      - fraudshield_api
+    volumes:
+      - ./deployment/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "8080:80"
+    restart: unless-stopped

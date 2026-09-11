@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install ruff
+      - run: ruff check src/ training/ tests/
+
+  type-check:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install mypy
+      - run: pip install -r requirements.txt
+      - run: mypy src/ --ignore-missing-imports || true   # non-blocking initially
+
+  unit-and-integration-tests:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      # NOTE: full data-dependent tests (integration/api) require data/processed/*.csv
+      # and data/features/models/*.joblib, which are produced by `make data split baselines
+      # optimize threshold` and are NOT checked into git (see .gitignore). In this CI job
+      # we run only the tests that don't require the trained artifacts (unit/). A separate,
+      # scheduled/nightly job would run `make all` end-to-end on a data-enabled runner
+      # before running the full suite including tests/integration and tests/api.
+      - run: python -m pytest tests/unit -v
+
+  build-docker-image:
+    runs-on: ubuntu-latest
+    needs: [unit-and-integration-tests]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image (no push — no registry configured)
+        run: docker build -f deployment/Dockerfile -t fraudshield-ai:ci .

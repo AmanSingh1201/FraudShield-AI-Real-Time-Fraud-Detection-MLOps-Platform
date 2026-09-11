@@ -1,0 +1,15 @@
+{
+  "business_objective": "maximize recall subject to precision >= 0.3",
+  "objective_feasible_on_val_MEASURED": true,
+  "chosen_threshold_MEASURED": 0.042311,
+  "precision_at_chosen_threshold_MEASURED": 0.3012,
+  "recall_at_chosen_threshold_MEASURED": 0.8929,
+  "f1_at_chosen_threshold_MEASURED": 0.4505,
+  "f2_at_chosen_threshold_MEASURED": 0.641,
+  "comparison_default_threshold_0.5": {
+    "precision_MEASURED": 0.88,
+    "recall_MEASURED": 0.7857
+  },
+  "n_val_positives": 56,
+  "n_val_rows": 42721
+}

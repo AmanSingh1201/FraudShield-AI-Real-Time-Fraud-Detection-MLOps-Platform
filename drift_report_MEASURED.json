@@ -1,0 +1,241 @@
+{
+  "real_train_vs_test_drift_MEASURED": {
+    "V1": {
+      "psi_MEASURED": 1.0129,
+      "status": "CRITICAL"
+    },
+    "V2": {
+      "psi_MEASURED": 0.0219,
+      "status": "OK"
+    },
+    "V3": {
+      "psi_MEASURED": 0.7509,
+      "status": "CRITICAL"
+    },
+    "V4": {
+      "psi_MEASURED": 0.1469,
+      "status": "WARNING"
+    },
+    "V5": {
+      "psi_MEASURED": 0.1669,
+      "status": "WARNING"
+    },
+    "V6": {
+      "psi_MEASURED": 0.067,
+      "status": "OK"
+    },
+    "V7": {
+      "psi_MEASURED": 0.0745,
+      "status": "OK"
+    },
+    "V8": {
+      "psi_MEASURED": 0.0422,
+      "status": "OK"
+    },
+    "V9": {
+      "psi_MEASURED": 0.0635,
+      "status": "OK"
+    },
+    "V10": {
+      "psi_MEASURED": 0.033,
+      "status": "OK"
+    },
+    "V11": {
+      "psi_MEASURED": 0.3392,
+      "status": "CRITICAL"
+    },
+    "V12": {
+      "psi_MEASURED": 0.2174,
+      "status": "WARNING"
+    },
+    "V13": {
+      "psi_MEASURED": 0.0407,
+      "status": "OK"
+    },
+    "V14": {
+      "psi_MEASURED": 0.0783,
+      "status": "OK"
+    },
+    "V15": {
+      "psi_MEASURED": 0.2187,
+      "status": "WARNING"
+    },
+    "V16": {
+      "psi_MEASURED": 0.0106,
+      "status": "OK"
+    },
+    "V17": {
+      "psi_MEASURED": 0.0433,
+      "status": "OK"
+    },
+    "V18": {
+      "psi_MEASURED": 0.0264,
+      "status": "OK"
+    },
+    "V19": {
+      "psi_MEASURED": 0.0337,
+      "status": "OK"
+    },
+    "V20": {
+      "psi_MEASURED": 0.0552,
+      "status": "OK"
+    },
+    "V21": {
+      "psi_MEASURED": 0.1013,
+      "status": "WARNING"
+    },
+    "V22": {
+      "psi_MEASURED": 0.164,
+      "status": "WARNING"
+    },
+    "V23": {
+      "psi_MEASURED": 0.1333,
+      "status": "WARNING"
+    },
+    "V24": {
+      "psi_MEASURED": 0.1341,
+      "status": "WARNING"
+    },
+    "V25": {
+      "psi_MEASURED": 0.2857,
+      "status": "CRITICAL"
+    },
+    "V26": {
+      "psi_MEASURED": 0.1473,
+      "status": "WARNING"
+    },
+    "V27": {
+      "psi_MEASURED": 0.0437,
+      "status": "OK"
+    },
+    "V28": {
+      "psi_MEASURED": 0.5335,
+      "status": "CRITICAL"
+    },
+    "Amount": {
+      "psi_MEASURED": 0.023,
+      "status": "OK"
+    }
+  },
+  "real_features_flagged_MEASURED": 14,
+  "synthetic_shift_demo_note": "Amount x3 injected on a COPY of the test set to prove the detector fires; not a claim about real drift.",
+  "synthetic_shift_drift_MEASURED": {
+    "V1": {
+      "psi_MEASURED": 1.0129,
+      "status": "CRITICAL"
+    },
+    "V2": {
+      "psi_MEASURED": 0.0219,
+      "status": "OK"
+    },
+    "V3": {
+      "psi_MEASURED": 0.7509,
+      "status": "CRITICAL"
+    },
+    "V4": {
+      "psi_MEASURED": 0.1469,
+      "status": "WARNING"
+    },
+    "V5": {
+      "psi_MEASURED": 0.1669,
+      "status": "WARNING"
+    },
+    "V6": {
+      "psi_MEASURED": 0.067,
+      "status": "OK"
+    },
+    "V7": {
+      "psi_MEASURED": 0.0745,
+      "status": "OK"
+    },
+    "V8": {
+      "psi_MEASURED": 0.0422,
+      "status": "OK"
+    },
+    "V9": {
+      "psi_MEASURED": 0.0635,
+      "status": "OK"
+    },
+    "V10": {
+      "psi_MEASURED": 0.033,
+      "status": "OK"
+    },
+    "V11": {
+      "psi_MEASURED": 0.3392,
+      "status": "CRITICAL"
+    },
+    "V12": {
+      "psi_MEASURED": 0.2174,
+      "status": "WARNING"
+    },
+    "V13": {
+      "psi_MEASURED": 0.0407,
+      "status": "OK"
+    },
+    "V14": {
+      "psi_MEASURED": 0.0783,
+      "status": "OK"
+    },
+    "V15": {
+      "psi_MEASURED": 0.2187,
+      "status": "WARNING"
+    },
+    "V16": {
+      "psi_MEASURED": 0.0106,
+      "status": "OK"
+    },
+    "V17": {
+      "psi_MEASURED": 0.0433,
+      "status": "OK"
+    },
+    "V18": {
+      "psi_MEASURED": 0.0264,
+      "status": "OK"
+    },
+    "V19": {
+      "psi_MEASURED": 0.0337,
+      "status": "OK"
+    },
+    "V20": {
+      "psi_MEASURED": 0.0552,
+      "status": "OK"
+    },
+    "V21": {
+      "psi_MEASURED": 0.1013,
+      "status": "WARNING"
+    },
+    "V22": {
+      "psi_MEASURED": 0.164,
+      "status": "WARNING"
+    },
+    "V23": {
+      "psi_MEASURED": 0.1333,
+      "status": "WARNING"
+    },
+    "V24": {
+      "psi_MEASURED": 0.1341,
+      "status": "WARNING"
+    },
+    "V25": {
+      "psi_MEASURED": 0.2857,
+      "status": "CRITICAL"
+    },
+    "V26": {
+      "psi_MEASURED": 0.1473,
+      "status": "WARNING"
+    },
+    "V27": {
+      "psi_MEASURED": 0.0437,
+      "status": "OK"
+    },
+    "V28": {
+      "psi_MEASURED": 0.5335,
+      "status": "CRITICAL"
+    },
+    "Amount": {
+      "psi_MEASURED": 0.291,
+      "status": "CRITICAL"
+    }
+  },
+  "synthetic_features_flagged_MEASURED": 15
+}

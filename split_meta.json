@@ -1,0 +1,21 @@
+{
+  "n_train": 198648,
+  "n_val": 42721,
+  "n_test": 42722,
+  "train_time_range": [
+    0.0,
+    132928.0
+  ],
+  "val_time_range": [
+    132929.0,
+    151328.0
+  ],
+  "test_time_range": [
+    151328.0,
+    172792.0
+  ],
+  "train_fraud_rate": 0.0018424549957714149,
+  "val_fraud_rate": 0.001310830738980829,
+  "test_fraud_rate": 0.0012171714807359207,
+  "duplicates_dropped_from_train": 716
+}
