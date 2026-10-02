@@ -219,8 +219,6 @@ add` on files that size will bloat repo history permanently. Simplest
 alternative: leave them out and let `make baselines optimize threshold`
 regenerate them in ~2 minutes on clone.
 
-Resume bullets built from these exact numbers (and why not to use generic
-template numbers): [`RESUME_BULLETS.md`](RESUME_BULLETS.md).
 
 ## 19. Future improvements
 - Swap in IEEE-CIS (or a real production feature store) for genuine
