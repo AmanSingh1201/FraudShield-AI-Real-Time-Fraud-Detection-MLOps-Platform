@@ -44,7 +44,7 @@ that's the version that falls apart under a follow-up question.
 | "Evidently-based drift monitoring" | PSI (features) + KS-test (prediction distribution), custom implementation | We didn't use the Evidently library; we implemented PSI/KS ourselves. Say what you built, not what a template assumed you'd use. |
 | "5+ models across 30+ experiments" | 3 baseline models + 25 Optuna trials + final/registry runs = 29 MLflow-tracked runs | Close enough to round to "25+ tracked experiments" honestly — don't need to inflate this one much, just be precise. |
 
-## If an interviewer asks "why is precision only 28%?"
+## "why is precision only 28%?"
 
 This is a feature, not a bug, and it's a good answer to have ready: the
 threshold was chosen to **maximize fraud recall subject to precision ≥ 30%**
